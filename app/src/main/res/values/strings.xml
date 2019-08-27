@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">NeoStore</string>
+    <string name="txt_login">LOGIN</string>
+    <string name="txt_register">REGISTER</string>
+    <string name="txt_signup">SIGN UP</string>
+    <string name="txt_close">CLOSE IT!</string>
+    <string name="app_already_account">Already have an Account ?</string>
+    <string name="app_new_account">Don\'t have an Account ?</string>
+    <string name="hint_fName">FULL NAME</string>
+    <string name="fName_regex">^[a-zA-Z ]+$</string>
+    <string name="hint_email">EMAIL ADDRESS</string>
+    <string name="hint_password">PASSWORD</string>
+    <string name="hint_cpassword">CONFIRM PASSWORD</string>
+    <string name="hint_mobile_no">MOBILE NUMBER</string>
+    <string name="txt_remember_me">REMEMBER ME</string>
+    <string name="txt_terms_condition">I agree Terms &amp; condition</string>
+    <string name="terms_condition">Terms &amp; condition</string>
+    <string name="network_error_title">Ooops!</string>
+    <string name="network_error_message">It`s just that you lost your connection</string>
+    <string name="loading_title">Please Wait!</string>
+    <string name="loading_message">Getting Your OUTPUT right Now!</string>
+    <string name="market_news">Market News</string>
+</resources>

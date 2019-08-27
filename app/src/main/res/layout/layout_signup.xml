@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/layout_background"
+>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/topUpGL"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.07"
+            android:layout_width="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/bottomUpGL"
+            android:layout_height="wrap_content"/>
+
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ImgHGL"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.65"
+            android:layout_width="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/bottomUpGL"
+            android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/ImgVGL"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.85"
+            android:layout_width="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/bottomUpGL"
+            android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomUpGL"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.75"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/bottomDownGL"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.90"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/StartGL"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.05"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/EndGL"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.95"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+    <com.example.loginneostore.util.EditText
+            app:layout_constraintTop_toBottomOf="@id/topUpGL"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:id="@+id/fName"
+            android:hint="@string/hint_fName"
+            android:padding="20dp"
+            android:textSize="14sp"
+            android:textColorHint="#606060"
+            android:inputType="text"
+            app:disableCopy="true"
+            tools:ignore="RtlCompat,TextFields"
+            android:importantForAutofill="no"
+            app:prefix="Mr/Ms. "
+            app:type_regex="@string/fName_regex"
+            tools:targetApi="o"/>
+
+
+
+
+    <com.example.loginneostore.util.EditText
+            app:layout_constraintTop_toBottomOf="@id/fName"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:drawablePadding="10dp"
+            android:id="@+id/email"
+            android:drawableStart="@drawable/ic_mail_outline_black_24dp"
+            android:hint="@string/hint_email"
+            android:padding="20dp"
+            android:textSize="14sp"
+            android:textColorHint="#606060"
+            android:inputType="text"
+            app:disableCopy="true"
+
+            tools:ignore="RtlCompat,TextFields"
+            android:importantForAutofill="no"
+            tools:targetApi="o"/>
+
+
+    <com.example.loginneostore.util.EditText
+            app:layout_constraintTop_toBottomOf="@id/email"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/password"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:hint="@string/hint_password"
+            android:padding="20dp"
+            android:textSize="14sp"
+            android:textColorHint="#606060"
+            app:disableCopy="true"
+
+            android:inputType="textPassword"
+            tools:ignore="RtlCompat,TextFields"
+            android:importantForAutofill="no"
+            tools:targetApi="o"/>
+
+    <com.example.loginneostore.util.EditText
+            app:layout_constraintTop_toBottomOf="@id/password"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:id="@+id/cpassword"
+            android:drawablePadding="10dp"
+            android:drawableStart="@drawable/ic_lock_outline_black_24dp"
+            android:hint="@string/hint_cpassword"
+            android:padding="20dp"
+            android:textSize="14sp"
+            android:textColorHint="#606060"
+            android:inputType="textPassword"
+            tools:ignore="RtlCompat,TextFields"
+            app:disableCopy="true"
+
+            android:importantForAutofill="no"
+            tools:targetApi="o"/>
+    <CheckBox
+            app:layout_constraintTop_toBottomOf="@id/cpassword"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/txt_terms_condition"
+            android:id="@+id/agreeChecked"
+            android:gravity="center"
+            android:padding="2dp"
+    />
+
+
+    <ImageButton
+            app:layout_constraintBottom_toTopOf="@id/ImgHGL"
+            app:layout_constraintTop_toBottomOf="@id/ImgHGL"
+            app:layout_constraintEnd_toStartOf="@id/ImgVGL"
+            app:layout_constraintStart_toEndOf="@id/ImgVGL"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_gravity="end"
+            android:layout_marginTop="70dp"
+            android:id="@+id/signin"
+            android:src="@drawable/ic_arrow_forward_black_24dp"
+            style="@style/buttonBG"
+            tools:ignore="ContentDescription"/>
+
+
+    <TextView
+            app:layout_constraintTop_toTopOf="@id/bottomUpGL"
+            app:layout_constraintBottom_toTopOf="@id/login"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            android:id="@+id/newAccount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="25dp"
+            android:text="@string/app_already_account"
+            android:textAlignment="center"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"/>
+
+
+    <Button
+            app:layout_constraintTop_toBottomOf="@id/newAccount"
+            app:layout_constraintStart_toEndOf="@id/StartGL"
+            app:layout_constraintEnd_toStartOf="@id/EndGL"
+            app:layout_constraintBottom_toTopOf="@id/bottomDownGL"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:id="@+id/login"
+            style="@style/buttonBG"
+            android:text="@string/txt_login"
+            android:textColor="@android:color/white"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

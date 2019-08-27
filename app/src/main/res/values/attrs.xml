@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="EditText">
+        <attr name="type_regex" format="string"/>
+        <attr name="prefix" format="string"/>
+        <attr name="disableCopy" format="boolean"/>
+    </declare-styleable>
+
+
+    <declare-styleable name="BlurLayout">
+        <attr name="downscaleFactor" format="float" />
+        <attr name="blurRadiusNew" format="integer" />
+        <attr name="fps" format="integer" />
+    </declare-styleable>
+    <declare-styleable name="ParallaxScrollView">
+        <attr name="backgroundView" />
+        <attr name="scrollFactor" />
+    </declare-styleable>
+</resources>

@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.example.loginneostore.util.BlurLayout
+        xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        app:blurRadiusNew="5"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clickable="true"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/middleHGL1"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.20"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/middleHGL2"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.60"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+        <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/bottomHGL"
+                android:orientation="horizontal"
+                app:layout_constraintGuide_percent="0.88"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"/>
+
+
+        <!--<androidx.constraintlayout.widget.ConstraintLayout-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--app:layout_constraintBottom_toTopOf="@id/middleHGL1"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:layout_height="0dp">-->
+
+        <!--<ImageView-->
+        <!--android:id="@+id/imgError"-->
+        <!--app:layout_constraintTop_toTopOf="parent"-->
+        <!--app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--app:layout_constraintStart_toStartOf="parent"-->
+        <!--app:layout_constraintEnd_toEndOf="parent"-->
+        <!--android:layout_width="0dp"-->
+        <!--android:background="@drawable/frame_00"-->
+        <!--android:layout_height="0dp"-->
+        <!--tools:ignore="ContentDescription"/>-->
+
+        <!--</androidx.constraintlayout.widget.ConstraintLayout>-->
+
+        <!--android:scaleType="centerInside"-->
+        <!--android:src="@drawable/frame_00"-->
+        <!--android:padding="60dp"-->
+
+        <ImageView
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/middleHGL2"
+                app:layout_constraintTop_toBottomOf="@id/middleHGL1"
+                android:id="@+id/imgError"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                tools:ignore="ContentDescription"/>
+
+
+        <TextView
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/errorMessage"
+                android:id="@+id/errorTitle"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="5"
+                android:singleLine="false"
+                app:layout_constraintWidth_percent=".750"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="24sp"
+                android:text="@string/network_error_title"
+                android:textColor="@android:color/white"
+                android:textStyle="bold"/>
+
+
+        <TextView
+                app:layout_constraintBottom_toTopOf="@id/middleHGL1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/errorTitle"
+                android:id="@+id/errorMessage"
+                android:layout_width="0dp"
+                android:text="@string/network_error_message"
+
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:maxLines="5"
+                android:singleLine="false"
+                app:layout_constraintWidth_percent=".700"
+                android:textAlignment="center"
+                android:textAllCaps="false"
+                android:textSize="14sp"
+
+                android:textColor="@android:color/white"
+                android:textStyle="normal"/>
+
+        <Button
+                app:layout_constraintTop_toBottomOf="@id/middleHGL2"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/bottomHGL"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:id="@+id/closeError"
+                style="@style/buttonBG"
+                android:padding="10dp"
+                android:text="@string/txt_close"
+                android:textColor="@android:color/white"/>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</com.example.loginneostore.util.BlurLayout>
+
+
