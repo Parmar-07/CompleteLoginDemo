@@ -12,7 +12,7 @@ CompleteLoginDemo have a simple login module with SignIn & SignUp features cover
 * Unit Testing
 
 
-<i> Apologies this is my first github project as long term of experience</i>
+<i> Apologies this is my first github project as long term of experience, Kindly let me know any suggestion or correction</i>
 
 
 * <b>MVP code architecture (kotlin)</b>
